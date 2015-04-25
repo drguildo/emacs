@@ -26,7 +26,7 @@
 ;; for a more technical explanation.
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (add-to-list 'load-path "~/.emacs.d/themes")
-(load-theme 'brin t)
+(load-theme 'bentley t)
 
 ;; increase font size for better readability
 ; (set-face-attribute 'default nil :height 140)
@@ -37,7 +37,7 @@
 ;; (in lines high) Emacs will have whenever you start it
 ;; (setq initial-frame-alist '((top . 0) (left . 0) (width . 177) (height . 53)))
 (add-to-list 'default-frame-alist '(height . 44))
-(add-to-list 'default-frame-alist '(width . 80))
+(add-to-list 'default-frame-alist '(width . 160))
 
 ;; These settings relate to how emacs interacts with your operating system
 (setq ;; makes killing/yanking interact with the clipboard
@@ -70,3 +70,5 @@
 
 ;; no bell
 (setq ring-bell-function 'ignore)
+
+(setq split-width-threshold 9999)
